@@ -12,7 +12,7 @@ instructions.
 ## Team Progress
 
 We did a lot of work in the first week, and got the MVP done. My handle is Vcao2279.
-![Contribution Graph](https://imgur.com/cifR4f2)
+![Contribution Graph](https://imgur.com/cifR4f2.jpg)
 
 ## Task Pulled
 
@@ -42,17 +42,17 @@ all SQL queries into graphQL syntax, which allows us to perform all CRUD operati
 without writing complex SQL. In order to do this, Prisma generates a schema
 based on the datamodels that we define in the database, and we call this Database Schema.
 For example, a User table with userid, name, email, password would be defined like this:
-[Prisma Schema](https://imgur.com/U8CXdh1)
+![Prisma Schema](https://imgur.com/U8CXdh1.jpg)
 
 Using this database schema, we'll generate a graphQL server schema, called Application Schema.
 And with this, we can create Mutation and Query resolvers, which is what graphQL uses to
 perform CRUD operation. For examples, with if we wanted to query the user table above, the query
 resolver would look like this:
-[Query resolver](https://imgur.com/xlpNei6)
+![Query resolver](https://imgur.com/xlpNei6.jpg)
 
 Now that the graphQL server is able to read the data from user table. We can test this GraphQL
 playground.
-[User Query](https://imgur.com/TeTJorO)
+![User Query](https://imgur.com/TeTJorO.jpg)
 Here we can select a particular user and return the information we need, in this case id, first name,
 last name, and email.
 
@@ -76,5 +76,7 @@ And if we can keep this up I think we can do well in making each week MVP.
 
 - [Frontend Deployment on Netlify](https://lambda-cookbook.netlify.com)
 - [Backend Deployment on Heroku](https://lambda-cookbook.herokuapp.com/)
-- [User Signup](https://imgur.com/L53yDrl)
-- [User Login](https://imgur.com/XtZVdNi)
+- User Signup
+  ![User Signup](https://imgur.com/L53yDrl.jpg)
+- User Login
+  ![User Login](https://imgur.com/XtZVdNi.jpg)
