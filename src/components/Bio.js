@@ -27,11 +27,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+          Written by <strong>Vu Cao</strong> a student of <a  href="http://lambdaschool.com">Lambdaschool</a>
         </p>
       </div>
     )
