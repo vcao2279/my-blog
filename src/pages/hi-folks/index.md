@@ -1,10 +1,10 @@
 ---
 title: Week 1 in Labs8
-date: "2018-11-09"
+date: '2018-11-09'
 ---
 
 This week is the first week of Labs8. Our project is called Cookbook. Cookbook
-let user save a recipe from the internet, and schedule the recipe for a 
+let user save a recipe from the internet, and schedule the recipe for a
 particular day during the week. The app will automatically generate a shopping
 list for the whole week. User can also open a recipe and follow the cooking
 instructions.
@@ -12,105 +12,69 @@ instructions.
 ## Team Progress
 
 We did a lot of work in the first week, and got the MVP done. My handle is Vcao2279.
-![Contribution Graph](src/components/week1.JPG)
+![Contribution Graph](https://imgur.com/cifR4f2)
 
 ## Task Pulled
+
 ### Front End
-* Ticket 1
-    * [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/17)
-    * [Trello](https://trello.com/c/9ObJyfx4/37-deploy-front-end-to-netlify)
+
+- Ticket 1
+  - [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/17)
+  - [Trello](https://trello.com/c/9ObJyfx4/37-deploy-front-end-to-netlify)
 
 ### Back End
-* Ticket 1: Initialize GraphQL Server
-    * [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/7)
-    * [Trello](https://trello.com/c/L8Jhvo8H/10-graphql-initial-setup)
-* Ticket 2: Deploy Prisma DB
-    * [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/14)
-    * [Trello](https://trello.com/c/xQmrGqhh/36-deploy-prisma-db-to-heroku)
-* Ticket 3: Create GraphQL datamodels and authentication logic 
-    * [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/12)
-    * [Trello](https://trello.com/c/VdMUMZXh/26-graphql-data-relationships-and-authentication-logic)
 
+- Ticket 1: Initialize GraphQL Server
+  - [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/7)
+  - [Trello](https://trello.com/c/L8Jhvo8H/10-graphql-initial-setup)
+- Ticket 2: Deploy Prisma DB
+  - [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/14)
+  - [Trello](https://trello.com/c/xQmrGqhh/36-deploy-prisma-db-to-heroku)
+- Ticket 3: Create GraphQL datamodels and authentication logic
+  - [Github](https://github.com/Lambda-School-Labs/Labs8-Cookbook/pull/12)
+  - [Trello](https://trello.com/c/VdMUMZXh/26-graphql-data-relationships-and-authentication-logic)
 
-The most challenge task for me this week is ticket 1, setting up graphQL server.
+### Analysis
 
+The most challenge task for me this week was ticket 3, creating graphQL datamodels.
+We use Prisma as an ORM for our database, which is a posgreSQL. Prisma translate
+all SQL queries into graphQL syntax, which allows us to perform all CRUD operations
+without writing complex SQL. In order to do this, Prisma generates a schema
+based on the datamodels that we define in the database, and we call this Database Schema.
+For example, a User table with userid, name, email, password would be defined like this:
+[Prisma Schema](https://imgur.com/U8CXdh1)
 
-### Overlaid the jeepers uselessly much excluding
+Using this database schema, we'll generate a graphQL server schema, called Application Schema.
+And with this, we can create Mutation and Query resolvers, which is what graphQL uses to
+perform CRUD operation. For examples, with if we wanted to query the user table above, the query
+resolver would look like this:
+[Query resolver](https://imgur.com/xlpNei6)
 
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-[Longe and Parole](http://google.com) and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.
+Now that the graphQL server is able to read the data from user table. We can test this GraphQL
+playground.
+[User Query](https://imgur.com/TeTJorO)
+Here we can select a particular user and return the information we need, in this case id, first name,
+last name, and email.
 
-> Far far away, behind the word mountains, far from the countries Vokalia and
-> Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-> right at the coast of the Semantics, a large language ocean.
+The datamodel of graphQL is totally different than SQL tables. It's challenging to wrap my head this
+at the beginning. At the same time, it's also nice to see how precise the syntax is. Datamodels are
+tightly connected in graphQL schema, and this allows me to query exactly what I want using very short
+query, compared to SQL where I have to write complex query.
 
-It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.
+### Reflection
 
-### According a funnily until pre-set or arrogant well cheerful
+Working in a team is hard! I'm more of an individual type of developer. I like
+to have an attack plan for a project, and stick with it. The first challenge I
+had was to compromise. Each of us had his/her idea on how to tackle this lab project.
+And we had to figure out how to divide our tasks in a logical way. The good thing was
+that none of us was really pushing their idea on other members in the team. We all
+compromised and figured out what we liked to do, then divided our tasks accordingly.
+I think this is the main reason that we worked together pretty well during this first week.
+And if we can keep this up I think we can do well in making each week MVP.
 
-The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.
+### Deployment Links
 
-1.  So baboon this
-2.  Mounted militant weasel gregariously admonishingly straightly hey
-3.  Dear foresaw hungry and much some overhung
-4.  Rash opossum less because less some amid besides yikes jeepers frenetic
-    impassive fruitlessly shut
-
-When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rethoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.
-
-> The copy warned the Little Blind Text, that where it came from it would have
-> been rewritten a thousand times and everything that was left from its origin
-> would be the word "and" and the Little Blind Text should turn around and
-> return to its own, safe country.
-
-But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.
-
-#### Silent delightfully including because before one up barring chameleon
-
-Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.
-
-Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
-
-##### Wherever far wow thus a squirrel raccoon jeez jaguar this from along
-
-She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rethoric question ran over her cheek, then she continued her way. On her way she
-met a copy.
-
-###### Slapped cozy a that lightheartedly and far
-
-The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word "and" and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.
+- [Frontend Deployment on Netlify](https://lambda-cookbook.netlify.com)
+- [Backend Deployment on Heroku](https://lambda-cookbook.herokuapp.com/)
+- [User Signup](https://imgur.com/L53yDrl)
+- [User Login](https://imgur.com/XtZVdNi)
