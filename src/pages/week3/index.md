@@ -51,7 +51,7 @@ particularly enjoyed reading about graphql mutation and query, and learn how to 
 In graphql, each mutation or query is imported into react as Mutation or Query components, and these
 components pass down data or mutation function using render props.
 
-![Query Example](https://i.imgur.com/ECO4Rdp.jpg)
+![Query Example](https://i.imgur.com/HdMcj61.jpg)
 
 When we nest them, these render props get extremely complicated. In this example, we need to use the
 User query component above to extract information of the logged in user. Then use that user id to retrieve
