@@ -59,7 +59,7 @@ page to pull data. This way the query isn't executed until after the mutation is
 That solved the problem for displaying recipe after redirection. But it still doesn't show the scheduled meals
 on the recipe card which displays the scheduled meals for that recipe.
 
-![no-event](https://i.imgur.com/HdMcj61.jpg)
+![no-event](https://i.imgur.com/nZm9OWS.jpg)
 
 The reason was simple once i understood it.
 When user hit save recipe, there are 2 mutations happen, first one is to create recipe, then use the id of
@@ -67,9 +67,9 @@ the newly created recipe to create schedule meals for it. However since these ar
 there are no guarantess that the recipe is created before the create event mutation is run, hence it will
 return no events. The fix is just add another fetch recipe query to refetchQueries, and it's good to go.
 
-![double-fetch](https://i.imgur.com/HdMcj61.jpg)
+![double-fetch](https://i.imgur.com/oYcF8SF.jpg)
 
-![with-event](https://i.imgur.com/HdMcj61.jpg)
+![with-event](https://i.imgur.com/1YcIcvI.jpg)
 
 It truly feels great everytime i found an "aha" moment in graphql.
 
