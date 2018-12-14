@@ -1,6 +1,6 @@
 ---
 title: Week 4 in Labs8
-date: '2018-12-7'
+date: '2018-12-07'
 ---
 
 This is the last week of our project. We're supposed to complete all functionalities and stylings for our project.
